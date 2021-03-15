@@ -15,7 +15,4 @@ class Zfp < Formula
     end
   end
 
-  test do
-    assert_predicate bin/"zfp", :exist?
-  end
 end
