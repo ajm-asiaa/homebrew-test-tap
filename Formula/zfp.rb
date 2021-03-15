@@ -15,4 +15,6 @@ class Zfp < Formula
     end
   end
 
+  test do
+  end
 end
