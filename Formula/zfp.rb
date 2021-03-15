@@ -10,7 +10,7 @@ class Zfp < Formula
   def install
     args = ["-DBUILD_EXAMPLES=OFF", "-DZFP_WITH_OPENMP=OFF"]
     mkdir "build" do
-      system "cmake", "-G", "Unix Makefiles", "..", *args
+      system "cmake", "..", *args
       system "make"
       system "make", "install"
     end
