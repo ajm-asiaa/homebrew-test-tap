@@ -2,7 +2,7 @@ class Zfp < Formula
   desc "This is zfp needed by carta_backend"
   homepage "https://github.com/LLNL/zfp"
   url "https://github.com/LLNL/zfp/releases/download/0.5.5/zfp-0.5.5.tar.gz"
-  sha256 "ce5440334b3eac2e058724faa4c6e4478ca1d81ea087e55ccca33f1996752aad"
+  sha256 "fdf7b948bab1f4e5dccfe2c2048fd98c24e417ad8fb8a51ed3463d04147393c5"
   license "MIT"
 
   depends_on "cmake" => :build
