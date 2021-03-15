@@ -1,5 +1,5 @@
 class Zfp < Formula
-  desc "This is zfp needed by carta_backend"
+  desc "This is zfp used by carta_backend"
   homepage "https://github.com/LLNL/zfp"
   url "https://github.com/LLNL/zfp/releases/download/0.5.5/zfp-0.5.5.tar.gz"
   sha256 "fdf7b948bab1f4e5dccfe2c2048fd98c24e417ad8fb8a51ed3463d04147393c5"
@@ -8,10 +8,9 @@ class Zfp < Formula
   depends_on "cmake" => :build
 
   def install
-    args = ["-DBUILD_EXAMPLES=OFF", "-DZFP_WITH_OPENMP=OFF"]
     mkdir "build" do
-      system "cmake", "..", *args
-      system "make"
+      system "cmake", "..", "-DBUILD_EXAMPLES=OFF",
+                            "-DZFP_WITH_OPENMP=OFF", *std_cmake_args
       system "make", "install"
     end
   end
