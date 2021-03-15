@@ -16,6 +16,6 @@ class Zfp < Formula
   end
 
   test do
-    assert_match "zfp version 0.5.5 (May 5, 2019)", shell_output("#{bin}/zfp").first
+    assert_match "zfp version 0.5.5 (May 5, 2019)", shell_output("#{bin}/zfp -v").first
   end
 end
