@@ -16,6 +16,7 @@ class Zfp < Formula
   end
 
   test do
-    assert_match "100% tests passed", shell_output("#{build}/make test")
+    system "make"
+    assert_match "all tests passed", shell_output("make test")
   end
 end
