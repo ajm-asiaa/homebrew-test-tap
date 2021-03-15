@@ -11,7 +11,7 @@ class Zfp < Formula
     mkdir "build" do
       system "cmake", "..", "-DBUILD_EXAMPLES=OFF",
                             "-DZFP_WITH_OPENMP=OFF", *std_cmake_args
-      system "cmake", "--build", ".", "--target", "install"
+      system "make", "install"
     end
   end
 
