@@ -16,7 +16,6 @@ class Zfp < Formula
   end
 
   test do
-    system "make"
-    assert_match "all tests passed", shell_output("make test")
+    assert_match "zfp version 0.5.5 (May 5, 2019)", shell_output("#{bin}/zfp").first
   end
 end
